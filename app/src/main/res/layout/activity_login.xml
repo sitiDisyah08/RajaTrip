@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003B45">
+
+    <!-- Foto latar belakang -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/raja_ampat"
+        android:scaleType="centerCrop"
+        android:contentDescription="Pemandangan Raja Ampat" />
+
+    <!-- Lapisan gelap -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_login_overlay" />
+
+    <!-- Konten login -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:clipToPadding="false"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:paddingStart="30dp"
+            android:paddingEnd="30dp"
+            android:paddingTop="34dp"
+            android:paddingBottom="28dp">
+
+        <!-- Logo -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🌴"
+                android:textSize="43sp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RAJATRIP"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.12"
+                android:layout_marginTop="2dp" />
+
+            <!-- Judul -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your Adventure\nBegins Here"
+                android:textColor="#FFFFFF"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:lineSpacingExtra="1dp"
+                android:shadowColor="#AA000000"
+                android:shadowRadius="5"
+                android:shadowDy="2"
+                android:layout_marginTop="72dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Temukan surga tersembunyi\ndi Raja Ampat."
+                android:textColor="#F2FFFFFF"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:lineSpacingExtra="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="54dp" />
+
+            <!-- Email -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_login_input"
+                android:paddingStart="15dp"
+                android:paddingEnd="12dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="✉"
+                    android:textColor="#FFFFFF"
+                    android:textSize="23sp"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="nama@email.com"
+                    android:inputType="textEmailAddress"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#C7D3D8"
+                    android:textSize="14sp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="4dp"
+                    android:background="@android:color/transparent" />
+            </LinearLayout>
+
+            <!-- Password -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:background="@drawable/bg_login_input"
+                android:paddingStart="15dp"
+                android:paddingEnd="12dp"
+                android:layout_marginTop="9dp">
+
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content"
+                    android:text="♙"
+                    android:textColor="#FFFFFF"
+                    android:textSize="22sp"
+                    android:gravity="center" />
+
+                <EditText
+                    android:id="@+id/etPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:hint="Masukkan password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColor="#FFFFFF"
+                    android:textColorHint="#C7D3D8"
+                    android:textSize="14sp"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="4dp"
+                    android:background="@android:color/transparent" />
+
+                <TextView
+                    android:id="@+id/tvTogglePassword"
+                    android:layout_width="34dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="◉"
+                    android:textColor="#FFFFFF"
+                    android:textSize="21sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="Tampilkan atau sembunyikan password" />
+            </LinearLayout>
+
+            <!-- Lupa password -->
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lupa password?"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                android:padding="8dp" />
+
+
+            <!-- Tombol login -->
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="9dp"
+                android:background="@drawable/bg_login_button"
+                android:backgroundTint="@null"
+                android:text="LOGIN  →"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:elevation="3dp" />
+
+            <!-- Pembatas login sosial -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="23dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#99FFFFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="  atau login dengan  "
+                    android:textColor="#FFFFFF"
+                    android:textSize="13sp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="#99FFFFFF" />
+            </LinearLayout>
+
+            <!-- Tombol sosial -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginTop="17dp">
+
+                <TextView
+                    android:id="@+id/btnGoogle"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:background="@drawable/bg_social_button"
+                    android:gravity="center"
+                    android:text="G"
+                    android:textColor="#4285F4"
+                    android:textStyle="bold"
+                    android:textSize="24sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="Login dengan Google" />
+
+                <TextView
+                    android:id="@+id/btnFacebook"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/bg_social_button"
+                    android:gravity="center"
+                    android:text="f"
+                    android:textColor="#1877F2"
+                    android:textStyle="bold"
+                    android:textSize="27sp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="Login dengan Facebook" />
+
+                <ImageView
+                    android:id="@+id/btnApple"
+                    android:layout_width="46dp"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="24dp"
+                    android:background="@drawable/bg_social_button"
+                    android:src="@drawable/ic_apple"
+                    android:scaleType="fitCenter"
+                    android:padding="11dp"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:contentDescription="Login dengan Apple" />
+            </LinearLayout>
+
+            <!-- Daftar akun -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:baselineAligned="false"
+                android:layout_marginTop="26dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Belum punya akun?"
+                    android:textColor="#E8FFFFFF"
+                    android:textSize="13sp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:id="@+id/tvRegister"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Daftar sekarang"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:singleLine="true"
+                    android:clickable="true"
+                    android:focusable="true" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

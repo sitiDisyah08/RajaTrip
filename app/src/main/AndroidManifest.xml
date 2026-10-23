@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="RajaTrip"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RajaTrip">
+
+        <!-- Halaman Open Trip -->
+        <activity
+            android:name=".OpenTripActivity"
+            android:exported="false" />
+
+        <!-- Halaman Registrasi -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+
+        <!-- Halaman Lupa Password -->
+        <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="false" />
+
+        <!-- Halaman Splash: tidak lagi menjadi halaman pertama -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+
+        <!-- Halaman Home -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+
+        <!-- Halaman Login: menjadi halaman pertama aplikasi -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
+    </application>
+
+</manifest>

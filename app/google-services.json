@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "433199459495",
+    "project_id": "rajatrip-80a68",
+    "storage_bucket": "rajatrip-80a68.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:433199459495:android:b091617c4e879d652dff82",
+        "android_client_info": {
+          "package_name": "com.example.rajatrip"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCroNr5CyR_RlK1xzd7--zzqTXWNjhDMbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
